@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Market Pulse — AI-powered daily trading briefing</title>
-  <meta name="description" content="Get a concise daily briefing on what the AI trading system sees — macro snapshot, watchlist signals, and key levels to watch. Free.">
+  <title>Market Pulse â AI-powered daily trading briefing</title>
+  <meta name="description" content="Get a concise daily briefing on what the AI trading system sees â macro snapshot, watchlist signals, and key levels to watch. Free.">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -37,7 +37,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── nav ── */
+    /* ââ nav ââ */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -60,7 +60,7 @@
     }
     .nav-cta:hover { opacity: 0.85; }
 
-    /* ── hero ── */
+    /* ââ hero ââ */
     .hero {
       min-height: 100vh;
       display: flex; flex-direction: column;
@@ -101,7 +101,7 @@
       margin: 0 auto 48px; line-height: 1.6;
     }
 
-    /* ── form ── */
+    /* ââ form ââ */
     .form-wrap {
       display: flex; gap: 10px; max-width: 440px;
       width: 100%; flex-wrap: wrap; justify-content: center;
@@ -127,7 +127,7 @@
       margin-top: 14px; text-align: center;
     }
 
-    /* ── sample email strip ── */
+    /* ââ sample email strip ââ */
     .sample-label {
       margin-top: 72px;
       font-size: 12px; color: var(--gray5);
@@ -175,7 +175,7 @@
     .sc-meta { font-size: 11px; color: var(--gray5); }
     .sc-reason { font-size: 12px; color: var(--gray6); margin-top: 3px; line-height: 1.5; }
 
-    /* ── features ── */
+    /* ââ features ââ */
     .features {
       padding: 100px 24px;
       max-width: 960px; margin: 0 auto;
@@ -204,7 +204,7 @@
     .feat-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
     .feat-desc { font-size: 14px; color: var(--gray5); line-height: 1.6; }
 
-    /* ── schedule ── */
+    /* ââ schedule ââ */
     .schedule {
       padding: 80px 24px;
       background: var(--gray1);
@@ -227,7 +227,7 @@
     }
     .sched-dot.active { background: var(--accent); }
 
-    /* ── footer cta ── */
+    /* ââ footer cta ââ */
     .footer-cta {
       padding: 100px 24px;
       text-align: center;
@@ -248,7 +248,7 @@
     footer a { color: var(--gray5); text-decoration: none; font-size: 13px; }
     footer a:hover { color: var(--white); }
 
-    /* ── success state ── */
+    /* ââ success state ââ */
     #success-msg {
       display: none;
       margin-top: 16px;
@@ -270,7 +270,7 @@
 
 <!-- nav -->
 <nav>
-  <a class="nav-brand" href="#"><span>●</span> Market Pulse</a>
+  <a class="nav-brand" href="#"><span>â</span> Market Pulse</a>
   <a class="nav-cta" href="#subscribe">Subscribe free</a>
 </nav>
 
@@ -278,13 +278,13 @@
 <section class="hero">
   <div class="badge">
     <span class="badge-dot"></span>
-    Daily · AI-powered · Free
+    Daily Â· AI-powered Â· Free
   </div>
 
   <h1>The trading briefing your <em>inbox</em> deserves</h1>
 
   <p class="hero-sub">
-    Every market day at 5:00 PM ET — VIX, yields, sector rotation,
+    Every market day at 5:00 PM ET â VIX, yields, sector rotation,
     and AI-generated signals for 6 watchlist symbols. No noise. No hype.
   </p>
 
@@ -293,13 +293,14 @@
     <button type="submit">Get the briefing</button>
   </form>
   <p class="form-note">Free forever. Unsubscribe anytime.</p>
-  <div id="success-msg">✓ You're in — first briefing arrives today at market close.</div>
+  <p style="font-size:12px;color:#6b7280;margin-top:6px;text-align:center;">Join 12 early subscribers getting daily AI-powered signals</p>
+  <div id="success-msg">â You're in â first briefing arrives today at market close.</div>
 
   <!-- sample email preview -->
   <p class="sample-label">Sample briefing</p>
   <div class="sample-card">
     <div class="sc-header">
-      <div class="sc-header-meta">Daily briefing · Tuesday, 2026-06-02 · 5:00 PM ET</div>
+      <div class="sc-header-meta">Daily briefing Â· Tuesday, 2026-06-02 Â· 5:00 PM ET</div>
       <div class="sc-header-title">Market Pulse</div>
     </div>
     <div class="sc-body">
@@ -326,21 +327,21 @@
       <div class="sc-row">
         <div>
           <div class="sc-sym">QQQ</div>
-          <span class="sc-badge watch">◎ WATCH</span>
+          <span class="sc-badge watch">â WATCH</span>
         </div>
         <div>
-          <div class="sc-meta">RSI 67 &nbsp;·&nbsp; IVR 35 &nbsp;·&nbsp; IRON_CONDOR</div>
-          <div class="sc-reason">RSI cooling toward IC threshold. VWAP extension narrowing — watching for flat slope confirmation before entry.</div>
+          <div class="sc-meta">RSI 67 &nbsp;Â·&nbsp; IVR 35 &nbsp;Â·&nbsp; IRON_CONDOR</div>
+          <div class="sc-reason">RSI cooling toward IC threshold. VWAP extension narrowing â watching for flat slope confirmation before entry.</div>
         </div>
       </div>
 
       <div class="sc-row">
         <div>
           <div class="sc-sym">AMD</div>
-          <span class="sc-badge watch">◎ WATCH</span>
+          <span class="sc-badge watch">â WATCH</span>
         </div>
         <div>
-          <div class="sc-meta">RSI 68 &nbsp;·&nbsp; IVR 87 &nbsp;·&nbsp; WHEEL</div>
+          <div class="sc-meta">RSI 68 &nbsp;Â·&nbsp; IVR 87 &nbsp;Â·&nbsp; WHEEL</div>
           <div class="sc-reason">IVR 87 is the strongest premium-selling setup on the board. RSI one tick from entry. CSP strike floor at $450 (10% OTM).</div>
         </div>
       </div>
@@ -348,11 +349,11 @@
       <div class="sc-row">
         <div>
           <div class="sc-sym">NVDA</div>
-          <span class="sc-badge skip">— SKIP</span>
+          <span class="sc-badge skip">â SKIP</span>
         </div>
         <div>
-          <div class="sc-meta">RSI 46 &nbsp;·&nbsp; BREAKOUT</div>
-          <div class="sc-reason">Volume ratio 0.98× — below 1.5× breakout threshold. No confirmed volume catalyst today.</div>
+          <div class="sc-meta">RSI 46 &nbsp;Â·&nbsp; BREAKOUT</div>
+          <div class="sc-reason">Volume ratio 0.98Ã â below 1.5Ã breakout threshold. No confirmed volume catalyst today.</div>
         </div>
       </div>
     </div>
@@ -365,34 +366,34 @@
   <h2 class="section-title">Built on a real trading system</h2>
   <div class="feat-grid">
     <div class="feat-card">
-      <div class="feat-icon">📡</div>
+      <div class="feat-icon">ð¡</div>
       <div class="feat-title">Live market data</div>
-      <div class="feat-desc">VIX, Treasury yields, sector ETF performance, and commodities — pulled fresh from market data feeds every day.</div>
+      <div class="feat-desc">VIX, Treasury yields, sector ETF performance, and commodities â pulled fresh from market data feeds every day.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">🤖</div>
+      <div class="feat-icon">ð¤</div>
       <div class="feat-title">AI signal analysis</div>
-      <div class="feat-desc">Two-stage AI pipeline — Ollama pre-screens all symbols, Claude makes the final call with full macro context.</div>
+      <div class="feat-desc">Two-stage AI pipeline â Ollama pre-screens all symbols, Claude makes the final call with full macro context.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">📊</div>
+      <div class="feat-icon">ð</div>
       <div class="feat-title">Watchlist signals</div>
-      <div class="feat-desc">SPY, QQQ, AAPL, NVDA, AMD, MSFT — RSI, IVR, VWAP deviation, and a plain-English action for each.</div>
+      <div class="feat-desc">SPY, QQQ, AAPL, NVDA, AMD, MSFT â RSI, IVR, VWAP deviation, and a plain-English action for each.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">⚡</div>
+      <div class="feat-icon">â¡</div>
       <div class="feat-title">Arrives at close</div>
       <div class="feat-desc">Delivered at 5:00 PM ET, 5 minutes after the internal EOD digest. Everything you need before tomorrow opens.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">🛡️</div>
+      <div class="feat-icon">ð¡ï¸</div>
       <div class="feat-title">Risk-first methodology</div>
-      <div class="feat-desc">Built on SMB Capital's framework — circuit breakers, earnings blackouts, VIX/yield overlays, no earnings plays.</div>
+      <div class="feat-desc">Built on institutional options trading rules &#8212; earnings blackouts, VIX/yield circuit breakers, and RSI gates keep the system disciplined.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">🆓</div>
-      <div class="feat-title">Free, always</div>
-      <div class="feat-desc">No paywall, no trial period. Just a clean briefing every market day. Unsubscribe in one click.</div>
+      <div class="feat-icon">ð</div>
+      <div class="feat-title">Free to start</div>
+      <div class="feat-desc">The daily briefing is always free. A Pro tier with live trade alerts and dashboard access is coming soon. Early subscribers get first access.</div>
     </div>
   </div>
 </section>
@@ -405,27 +406,27 @@
     <div class="sched-row">
       <div class="sched-time">08:30</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">Market context fetched — VIX, yields, sector ETFs, analyst targets</div>
+      <div class="sched-desc">Market context fetched â VIX, yields, sector ETFs, analyst targets</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">08:45</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">IBKR data pull — price bars, RSI, ATR, IVR, VWAP for all 6 symbols</div>
+      <div class="sched-desc">IBKR data pull â price bars, RSI, ATR, IVR, VWAP for all 6 symbols</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">09:20</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">Ollama pre-screen — fast local AI filter, confidence scoring</div>
+      <div class="sched-desc">Ollama pre-screen â fast local AI filter, confidence scoring</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">09:28</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">Claude final decision — escalated signals reviewed with full context</div>
+      <div class="sched-desc">Claude final decision â escalated signals reviewed with full context</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">16:20</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc"><strong style="color:#fff;">Market Pulse sent</strong> — clean briefing delivered to your inbox</div>
+      <div class="sched-desc"><strong style="color:#fff;">Market Pulse sent</strong> â clean briefing delivered to your inbox</div>
     </div>
   </div>
 </section>
@@ -440,9 +441,44 @@
   </form>
 </section>
 
+<!-- FAQ -->
+<section style="padding:72px 0;background:#0a0a0a;">
+  <div style="max-width:860px;margin:0 auto;padding:0 24px;">
+    <div style="font-size:0.7rem;color:#30d158;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;text-align:center;">FAQ</div>
+    <h2 style="font-size:2rem;font-weight:700;color:#fff;text-align:center;margin-bottom:48px;">Common questions</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
+      <div style="padding:22px;background:#111;border-radius:12px;border:1px solid #222;">
+        <h4 style="font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 8px;">What symbols do you cover?</h4>
+        <p style="font-size:0.85rem;color:#8e8e93;line-height:1.6;margin:0;">SPY, QQQ, AAPL, NVDA, AMD, and MSFT — screened every market day for RSI, implied volatility rank (IVR), and VWAP deviation.</p>
+      </div>
+      <div style="padding:22px;background:#111;border-radius:12px;border:1px solid #222;">
+        <h4 style="font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 8px;">How often does it send?</h4>
+        <p style="font-size:0.85rem;color:#8e8e93;line-height:1.6;margin:0;">Every market day (Mon&#8211;Fri) at 5:00 PM ET. One clean briefing per day.</p>
+      </div>
+      <div style="padding:22px;background:#111;border-radius:12px;border:1px solid #222;">
+        <h4 style="font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 8px;">Is this financial advice?</h4>
+        <p style="font-size:0.85rem;color:#8e8e93;line-height:1.6;margin:0;">No. Informational only &#8212; automated technical analysis, not personalised financial advice. Always do your own research.</p>
+      </div>
+      <div style="padding:22px;background:#111;border-radius:12px;border:1px solid #222;">
+        <h4 style="font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 8px;">What is a WATCH signal?</h4>
+        <p style="font-size:0.85rem;color:#8e8e93;line-height:1.6;margin:0;">A setup that's close but not there yet. You get exact entry conditions so you know precisely what to look for.</p>
+      </div>
+      <div style="padding:22px;background:#111;border-radius:12px;border:1px solid #222;">
+        <h4 style="font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 8px;">How is this different?</h4>
+        <p style="font-size:0.85rem;color:#8e8e93;line-height:1.6;margin:0;">Specific numbers: RSI 65.8, IVR 61.6, CSP $420 strike if price pulls to $430&#8211;$440. Two-stage AI pipeline &#8212; Ollama pre-screens, Claude makes the final call.</p>
+      </div>
+      <div style="padding:22px;background:#111;border-radius:12px;border:1px solid #222;">
+        <h4 style="font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 8px;">Will there be a paid tier?</h4>
+        <p style="font-size:0.85rem;color:#8e8e93;line-height:1.6;margin:0;">Yes. The daily briefing is always free. A Pro tier with live trade alerts is in development. Early subscribers get first access.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- footer -->
 <footer>
-  <span>© 2026 Market Pulse. For informational purposes only. Not financial advice.</span>
+  <span>Â© 2026 Market Pulse. For informational purposes only. Not financial advice.</span>
   <div style="display:flex; gap:20px;">
     <a href="mailto:rodriguez.velez87@gmail.com">Contact</a>
     <a href="#" onclick="return false;">Unsubscribe</a>
@@ -458,12 +494,12 @@ async function handleSubscribe(e) {
   const input = form.querySelector('input[type="email"]');
   if (!email) return;
 
-  btn.textContent = 'Subscribing…';
+  btn.textContent = 'Subscribingâ¦';
   btn.disabled    = true;
   input.disabled  = true;
 
   try {
-    // Web3Forms — free form backend, no server needed.
+    // Web3Forms â free form backend, no server needed.
     // Get your free access key at https://web3forms.com
     // Enter your email there, they send the key instantly. Then replace the placeholder below.
     const WEB3FORMS_ACCESS_KEY = '58d08545-e32a-4fb0-8e8e-72815d20fa7f';
@@ -482,7 +518,7 @@ async function handleSubscribe(e) {
 
     if (data.success) {
       document.getElementById('success-msg').style.display = 'block';
-      btn.textContent   = '✓ Subscribed';
+      btn.textContent   = 'â Subscribed';
       btn.style.opacity = '0.6';
     } else {
       throw new Error(data.message || 'Submission failed');
