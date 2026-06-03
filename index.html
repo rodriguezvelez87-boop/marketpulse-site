@@ -450,17 +450,50 @@
 </footer>
 
 <script>
-function handleSubscribe(e) {
+async function handleSubscribe(e) {
   e.preventDefault();
-  const email = e.target.querySelector('input[type="email"]').value;
-  // Replace this with a real form handler (Formspree, Netlify Forms, etc.)
-  // For now just show success UI
-  document.getElementById('success-msg').style.display = 'block';
-  e.target.querySelector('button').textContent = '✓ Subscribed';
-  e.target.querySelector('button').style.opacity = '0.6';
-  e.target.querySelector('input').disabled = true;
-  e.target.querySelector('button').disabled = true;
-  console.log('Subscribe intent:', email);
+  const form  = e.target;
+  const email = form.querySelector('input[type="email"]').value.trim();
+  const btn   = form.querySelector('button');
+  const input = form.querySelector('input[type="email"]');
+  if (!email) return;
+
+  btn.textContent = 'Subscribing…';
+  btn.disabled    = true;
+  input.disabled  = true;
+
+  try {
+    // Web3Forms — free form backend, no server needed.
+    // Get your free access key at https://web3forms.com
+    // Enter your email there, they send the key instantly. Then replace the placeholder below.
+    const WEB3FORMS_ACCESS_KEY = 'WEB3FORMS_ACCESS_KEY';
+
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject:    'New Market Pulse subscriber',
+        email,
+        from_name:  'Market Pulse Subscribe Form',
+      }),
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      document.getElementById('success-msg').style.display = 'block';
+      btn.textContent   = '✓ Subscribed';
+      btn.style.opacity = '0.6';
+    } else {
+      throw new Error(data.message || 'Submission failed');
+    }
+  } catch (err) {
+    btn.textContent = 'Try again';
+    btn.disabled    = false;
+    input.disabled  = false;
+    input.style.borderColor = '#ff453a';
+    window.location.href = 'mailto:rodriguez.velez87@gmail.com?subject=Subscribe%20to%20Market%20Pulse&body=Please%20add%20me%3A%20' + encodeURIComponent(email);
+  }
 }
 </script>
 
