@@ -285,7 +285,7 @@
 
   <p class="hero-sub">
     Every market day at 5:00 PM ET &mdash; VIX, yields, sector rotation,
-    and AI-generated signals for 6 watchlist symbols. No noise. No hype.
+    and AI-generated signals for 6 watchlist symbols. Rules-based. Automated. No noise.
   </p>
 
   <form id="subscribe" class="form-wrap" onsubmit="handleSubscribe(event)">
@@ -293,7 +293,7 @@
     <button type="submit">Get the briefing</button>
   </form>
   <p class="form-note">Free forever. Unsubscribe anytime.</p>
-  <p style="font-size:12px;color:#6b7280;margin-top:6px;text-align:center;">Join 12 early subscribers getting daily AI-powered signals</p>
+  <p style="font-size:12px;color:#6b7280;margin-top:6px;text-align:center;">Day 18 &nbsp;&middot;&nbsp; 6 symbols &nbsp;&middot;&nbsp; 0 rule violations &nbsp;&middot;&nbsp; Running since May 2026</p>
   <div id="success-msg">&#10003; You're in &mdash; first briefing arrives today at market close.</div>
 
   <!-- sample email preview -->
@@ -399,7 +399,20 @@
 </section>
 
 <!-- schedule -->
-<section class="schedule">
+<section style="padding:32px 0;background:#0a0a0a;border-top:1px solid #1c1c1e;border-bottom:1px solid #1c1c1e;">
+    <div style="max-width:860px;margin:0 auto;padding:0 24px;text-align:center;">
+      <div style="font-size:0.7rem;color:#48484a;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:20px;">Data &amp; infrastructure</div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:36px;">
+        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">IBKR</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Live market data</div></div>
+        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">OPRA</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Options data</div></div>
+        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">Claude AI</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Signal decisions</div></div>
+        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">Ollama</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Pre-screen AI</div></div>
+        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">yfinance</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Analyst targets</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule">
   <div class="schedule-inner">
     <p class="section-tag" style="text-align:left; margin-bottom:12px;">What runs under the hood</p>
     <h2 style="font-size:24px; font-weight:700; letter-spacing:-0.02em; margin-bottom:32px;">Daily pipeline</h2>
@@ -440,6 +453,21 @@
     <button type="submit">Subscribe free</button>
   </form>
 </section>
+
+  <!-- About -->
+  <section style="padding:64px 0;background:#111;">
+    <div style="max-width:680px;margin:0 auto;padding:0 24px;text-align:center;">
+      <div style="font-size:0.7rem;color:#30d158;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">About</div>
+      <h2 style="font-size:1.75rem;font-weight:700;color:#fff;margin-bottom:20px;">Built by a developer,<br>for active traders</h2>
+      <p style="font-size:0.95rem;color:#8e8e93;line-height:1.7;margin:0 0 16px;">
+        I built this pipeline to generate capital for myself &mdash; a developer in Puerto Rico using algorithmic trading to work toward financial independence. Every signal in Market Pulse is one I evaluate against my own paper account before it reaches your inbox.
+      </p>
+      <p style="font-size:0.95rem;color:#8e8e93;line-height:1.7;margin:0;">
+        The system runs fully automated Monday&ndash;Friday: live IBKR data at 8:45 AM, two-stage AI screening by 9:30 AM, briefing in your inbox at 5:00 PM. No manual intervention, no editorial bias &mdash; just rules-based analysis, every trading day.
+      </p>
+    </div>
+  </section>
+
 
 <!-- FAQ -->
 <section style="padding:72px 0;background:#0a0a0a;">
