@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Market Pulse â AI-powered daily trading briefing</title>
-  <meta name="description" content="Get a concise daily briefing on what the AI trading system sees â macro snapshot, watchlist signals, and key levels to watch. Free.">
+  <title>Market Pulse &mdash; AI-powered daily trading briefing</title>
+  <meta name="description" content="Get a concise daily briefing on what the AI trading system sees &mdash; macro snapshot, watchlist signals, and key levels to watch. Free.">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -37,7 +37,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ââ nav ââ */
+    /* ---- nav ---- */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -60,7 +60,7 @@
     }
     .nav-cta:hover { opacity: 0.85; }
 
-    /* ââ hero ââ */
+    /* ---- hero ---- */
     .hero {
       min-height: 100vh;
       display: flex; flex-direction: column;
@@ -101,7 +101,7 @@
       margin: 0 auto 48px; line-height: 1.6;
     }
 
-    /* ââ form ââ */
+    /* ---- form ---- */
     .form-wrap {
       display: flex; gap: 10px; max-width: 440px;
       width: 100%; flex-wrap: wrap; justify-content: center;
@@ -127,7 +127,7 @@
       margin-top: 14px; text-align: center;
     }
 
-    /* ââ sample email strip ââ */
+    /* ---- sample email strip ---- */
     .sample-label {
       margin-top: 72px;
       font-size: 12px; color: var(--gray5);
@@ -175,7 +175,7 @@
     .sc-meta { font-size: 11px; color: var(--gray5); }
     .sc-reason { font-size: 12px; color: var(--gray6); margin-top: 3px; line-height: 1.5; }
 
-    /* ââ features ââ */
+    /* ---- features ---- */
     .features {
       padding: 100px 24px;
       max-width: 960px; margin: 0 auto;
@@ -204,7 +204,7 @@
     .feat-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
     .feat-desc { font-size: 14px; color: var(--gray5); line-height: 1.6; }
 
-    /* ââ schedule ââ */
+    /* ---- schedule ---- */
     .schedule {
       padding: 80px 24px;
       background: var(--gray1);
@@ -227,7 +227,7 @@
     }
     .sched-dot.active { background: var(--accent); }
 
-    /* ââ footer cta ââ */
+    /* ---- footer cta ---- */
     .footer-cta {
       padding: 100px 24px;
       text-align: center;
@@ -248,7 +248,7 @@
     footer a { color: var(--gray5); text-decoration: none; font-size: 13px; }
     footer a:hover { color: var(--white); }
 
-    /* ââ success state ââ */
+    /* ---- success state ---- */
     #success-msg {
       display: none;
       margin-top: 16px;
@@ -270,7 +270,7 @@
 
 <!-- nav -->
 <nav>
-  <a class="nav-brand" href="#"><span>â</span> Market Pulse</a>
+  <a class="nav-brand" href="#"><span>&bull;</span> Market Pulse</a>
   <a class="nav-cta" href="#subscribe">Subscribe free</a>
 </nav>
 
@@ -284,7 +284,7 @@
   <h1>The trading briefing your <em>inbox</em> deserves</h1>
 
   <p class="hero-sub">
-    Every market day at 5:00 PM ET â VIX, yields, sector rotation,
+    Every market day at 5:00 PM ET &mdash; VIX, yields, sector rotation,
     and AI-generated signals for 6 watchlist symbols. No noise. No hype.
   </p>
 
@@ -294,7 +294,7 @@
   </form>
   <p class="form-note">Free forever. Unsubscribe anytime.</p>
   <p style="font-size:12px;color:#6b7280;margin-top:6px;text-align:center;">Join 12 early subscribers getting daily AI-powered signals</p>
-  <div id="success-msg">â You're in â first briefing arrives today at market close.</div>
+  <div id="success-msg">&#10003; You're in &mdash; first briefing arrives today at market close.</div>
 
   <!-- sample email preview -->
   <p class="sample-label">Sample briefing</p>
@@ -327,18 +327,18 @@
       <div class="sc-row">
         <div>
           <div class="sc-sym">QQQ</div>
-          <span class="sc-badge watch">â WATCH</span>
+          <span class="sc-badge watch">&#9678; WATCH</span>
         </div>
         <div>
           <div class="sc-meta">RSI 67 &nbsp;·&nbsp; IVR 35 &nbsp;·&nbsp; IRON_CONDOR</div>
-          <div class="sc-reason">RSI cooling toward IC threshold. VWAP extension narrowing â watching for flat slope confirmation before entry.</div>
+          <div class="sc-reason">RSI cooling toward IC threshold. VWAP extension narrowing &mdash; watching for flat slope confirmation before entry.</div>
         </div>
       </div>
 
       <div class="sc-row">
         <div>
           <div class="sc-sym">AMD</div>
-          <span class="sc-badge watch">â WATCH</span>
+          <span class="sc-badge watch">&#9678; WATCH</span>
         </div>
         <div>
           <div class="sc-meta">RSI 68 &nbsp;·&nbsp; IVR 87 &nbsp;·&nbsp; WHEEL</div>
@@ -349,11 +349,11 @@
       <div class="sc-row">
         <div>
           <div class="sc-sym">NVDA</div>
-          <span class="sc-badge skip">â SKIP</span>
+          <span class="sc-badge skip">&mdash; SKIP</span>
         </div>
         <div>
           <div class="sc-meta">RSI 46 &nbsp;·&nbsp; BREAKOUT</div>
-          <div class="sc-reason">Volume ratio 0.98Ã â below 1.5Ã breakout threshold. No confirmed volume catalyst today.</div>
+          <div class="sc-reason">Volume ratio 0.98&times; &mdash; below 1.5&times; breakout threshold. No confirmed volume catalyst today.</div>
         </div>
       </div>
     </div>
@@ -368,20 +368,20 @@
     <div class="feat-card">
       <div class="feat-icon">ð¡</div>
       <div class="feat-title">Live market data</div>
-      <div class="feat-desc">VIX, Treasury yields, sector ETF performance, and commodities â pulled fresh from market data feeds every day.</div>
+      <div class="feat-desc">VIX, Treasury yields, sector ETF performance, and commodities &mdash; pulled fresh from market data feeds every day.</div>
     </div>
     <div class="feat-card">
       <div class="feat-icon">ð¤</div>
       <div class="feat-title">AI signal analysis</div>
-      <div class="feat-desc">Two-stage AI pipeline â Ollama pre-screens all symbols, Claude makes the final call with full macro context.</div>
+      <div class="feat-desc">Two-stage AI pipeline &mdash; Ollama pre-screens all symbols, Claude makes the final call with full macro context.</div>
     </div>
     <div class="feat-card">
       <div class="feat-icon">ð</div>
       <div class="feat-title">Watchlist signals</div>
-      <div class="feat-desc">SPY, QQQ, AAPL, NVDA, AMD, MSFT â RSI, IVR, VWAP deviation, and a plain-English action for each.</div>
+      <div class="feat-desc">SPY, QQQ, AAPL, NVDA, AMD, MSFT &mdash; RSI, IVR, VWAP deviation, and a plain-English action for each.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">â¡</div>
+      <div class="feat-icon">&#9889;</div>
       <div class="feat-title">Arrives at close</div>
       <div class="feat-desc">Delivered at 5:00 PM ET, 5 minutes after the internal EOD digest. Everything you need before tomorrow opens.</div>
     </div>
@@ -406,27 +406,27 @@
     <div class="sched-row">
       <div class="sched-time">08:30</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">Market context fetched â VIX, yields, sector ETFs, analyst targets</div>
+      <div class="sched-desc">Market context fetched &mdash; VIX, yields, sector ETFs, analyst targets</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">08:45</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">IBKR data pull â price bars, RSI, ATR, IVR, VWAP for all 6 symbols</div>
+      <div class="sched-desc">IBKR data pull &mdash; price bars, RSI, ATR, IVR, VWAP for all 6 symbols</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">09:20</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">Ollama pre-screen â fast local AI filter, confidence scoring</div>
+      <div class="sched-desc">Ollama pre-screen &mdash; fast local AI filter, confidence scoring</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">09:28</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc">Claude final decision â escalated signals reviewed with full context</div>
+      <div class="sched-desc">Claude final decision &mdash; escalated signals reviewed with full context</div>
     </div>
     <div class="sched-row">
       <div class="sched-time">16:20</div>
       <div class="sched-dot active"></div>
-      <div class="sched-desc"><strong style="color:#fff;">Market Pulse sent</strong> â clean briefing delivered to your inbox</div>
+      <div class="sched-desc"><strong style="color:#fff;">Market Pulse sent</strong> &mdash; clean briefing delivered to your inbox</div>
     </div>
   </div>
 </section>
@@ -494,12 +494,12 @@ async function handleSubscribe(e) {
   const input = form.querySelector('input[type="email"]');
   if (!email) return;
 
-  btn.textContent = 'Subscribingâ¦';
+  btn.textContent = 'Subscribing&hellip;';
   btn.disabled    = true;
   input.disabled  = true;
 
   try {
-    // Web3Forms â free form backend, no server needed.
+    // Web3Forms &mdash; free form backend, no server needed.
     // Get your free access key at https://web3forms.com
     // Enter your email there, they send the key instantly. Then replace the placeholder below.
     const WEB3FORMS_ACCESS_KEY = '58d08545-e32a-4fb0-8e8e-72815d20fa7f';
@@ -518,7 +518,7 @@ async function handleSubscribe(e) {
 
     if (data.success) {
       document.getElementById('success-msg').style.display = 'block';
-      btn.textContent   = 'â Subscribed';
+      btn.textContent   = '&#10003; Subscribed';
       btn.style.opacity = '0.6';
     } else {
       throw new Error(data.message || 'Submission failed');
