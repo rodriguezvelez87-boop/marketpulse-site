@@ -169,7 +169,7 @@
       display: inline-block; padding: 2px 8px; border-radius: 4px;
       font-size: 11px; font-weight: 600; margin-top: 4px;
     }
-    .sc-badge.  { background: rgba(255,214,10,0.12); color: #ffd60a; }
+    .sc-badge.watch  { background: rgba(255,214,10,0.12); color: #ffd60a; }
     .sc-badge.signal { background: rgba(48,209,88,0.12); color: #30d158; }
     .sc-badge.skip   { background: rgba(255,255,255,0.06); color: var(--gray5); }
     .sc-meta { font-size: 11px; color: var(--gray5); }
@@ -285,7 +285,7 @@
 
   <p class="hero-sub">
     Every market day at 5:00 PM ET &mdash; VIX, yields, sector rotation,
-    and AI-generated signals for 6 watchlist symbols. Rules-based. Automated. No noise.
+    and AI-generated signals for 6 watchlist symbols. No noise. No hype.
   </p>
 
   <form id="subscribe" class="form-wrap" onsubmit="handleSubscribe(event)">
@@ -293,7 +293,7 @@
     <button type="submit">Get the briefing</button>
   </form>
   <p class="form-note">Free forever. Unsubscribe anytime.</p>
-  <p style="font-size:12px;color:#6b7280;margin-top:6px;text-align:center;">Day 18 &nbsp;&middot;&nbsp; 6 symbols &nbsp;&middot;&nbsp; 0 rule violations &nbsp;&middot;&nbsp; Running since May 2026</p>
+  <p style="font-size:12px;color:#6b7280;margin-top:6px;text-align:center;">Get daily AI-powered signals, free in your inbox</p>
   <div id="success-msg">&#10003; You're in &mdash; first briefing arrives today at market close.</div>
 
   <!-- sample email preview -->
@@ -341,8 +341,8 @@
           <span class="sc-badge watch">&#9678; WATCH</span>
         </div>
         <div>
-          <div class="sc-meta">RSI 58.6 &nbsp;·&nbsp; IVR 89.9 &nbsp;·&nbsp; WHEEL</div>
-          <div class="sc-reason">IVR 89.9 is the strongest premium-selling setup on the board. RSI 58.6 falling — ideal CSP strike floor at $450 (10% OTM).</div>
+          <div class="sc-meta">RSI 68 &nbsp;·&nbsp; IVR 87 &nbsp;·&nbsp; WHEEL</div>
+          <div class="sc-reason">IVR 87 is the strongest premium-selling setup on the board. RSI one tick from entry. CSP strike floor at $450 (10% OTM).</div>
         </div>
       </div>
 
@@ -352,8 +352,8 @@
           <span class="sc-badge skip">&mdash; SKIP</span>
         </div>
         <div>
-          <div class="sc-meta">RSI 34.1 &nbsp;·&nbsp; SKIP</div>
-          <div class="sc-reason">Volume ratio 0.98&times; &mdash; below 1.5&times; breakout threshold. IVR unavailable + RS -3.8% vs SPY. Two hard blocks skipped per system rulese catalyst today.</div>
+          <div class="sc-meta">RSI 46 &nbsp;·&nbsp; BREAKOUT</div>
+          <div class="sc-reason">Volume ratio 0.98&times; &mdash; below 1.5&times; breakout threshold. No confirmed volume catalyst today.</div>
         </div>
       </div>
     </div>
@@ -366,17 +366,17 @@
   <h2 class="section-title">Built on a real trading system</h2>
   <div class="feat-grid">
     <div class="feat-card">
-      <div class="feat-icon">&#128225;</div>
+      <div class="feat-icon">ð¡</div>
       <div class="feat-title">Live market data</div>
       <div class="feat-desc">VIX, Treasury yields, sector ETF performance, and commodities &mdash; pulled fresh from market data feeds every day.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">&#129302;</div>
+      <div class="feat-icon">ð¤</div>
       <div class="feat-title">AI signal analysis</div>
       <div class="feat-desc">Two-stage AI pipeline &mdash; Ollama pre-screens all symbols, Claude makes the final call with full macro context.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">&#128202;</div>
+      <div class="feat-icon">ð</div>
       <div class="feat-title">Watchlist signals</div>
       <div class="feat-desc">SPY, QQQ, AAPL, NVDA, AMD, MSFT &mdash; RSI, IVR, VWAP deviation, and a plain-English action for each.</div>
     </div>
@@ -386,12 +386,12 @@
       <div class="feat-desc">Delivered at 5:00 PM ET, 5 minutes after the internal EOD digest. Everything you need before tomorrow opens.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">&#128737;</div>
+      <div class="feat-icon">ð¡ï¸</div>
       <div class="feat-title">Risk-first methodology</div>
       <div class="feat-desc">Built on institutional options trading rules &#8212; earnings blackouts, VIX/yield circuit breakers, and RSI gates keep the system disciplined.</div>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">&#127381;</div>
+      <div class="feat-icon">ð</div>
       <div class="feat-title">Free to start</div>
       <div class="feat-desc">The daily briefing is always free. A Pro tier with live trade alerts and dashboard access is coming soon. Early subscribers get first access.</div>
     </div>
@@ -399,20 +399,7 @@
 </section>
 
 <!-- schedule -->
-<section style="padding:32px 0;background:#0a0a0a;border-top:1px solid #1c1c1e;border-bottom:1px solid #1c1c1e;">
-    <div style="max-width:860px;margin:0 auto;padding:0 24px;text-align:center;">
-      <div style="font-size:0.7rem;color:#48484a;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:20px;">Data &amp; infrastructure</div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:36px;">
-        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">IBKR</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Live market data</div></div>
-        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">OPRA</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Options data</div></div>
-        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">Claude AI</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Signal decisions</div></div>
-        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">Ollama</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Pre-screen AI</div></div>
-        <div style="text-align:center;"><div style="font-size:1.1rem;font-weight:700;color:#e5e5ea;letter-spacing:0.04em;">yfinance</div><div style="font-size:0.7rem;color:#48484a;margin-top:3px;">Analyst targets</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="schedule">
+<section class="schedule">
   <div class="schedule-inner">
     <p class="section-tag" style="text-align:left; margin-bottom:12px;">What runs under the hood</p>
     <h2 style="font-size:24px; font-weight:700; letter-spacing:-0.02em; margin-bottom:32px;">Daily pipeline</h2>
@@ -453,21 +440,6 @@
     <button type="submit">Subscribe free</button>
   </form>
 </section>
-
-  <!-- About -->
-  <section style="padding:64px 0;background:#111;">
-    <div style="max-width:680px;margin:0 auto;padding:0 24px;text-align:center;">
-      <div style="font-size:0.7rem;color:#30d158;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">About</div>
-      <h2 style="font-size:1.75rem;font-weight:700;color:#fff;margin-bottom:20px;">Built by a developer,<br>for active traders</h2>
-      <p style="font-size:0.95rem;color:#8e8e93;line-height:1.7;margin:0 0 16px;">
-        I built this pipeline to generate capital for myself &mdash; a developer in Puerto Rico using algorithmic trading to work toward financial independence. Every signal in Market Pulse is one I evaluate against my own paper account before it reaches your inbox.
-      </p>
-      <p style="font-size:0.95rem;color:#8e8e93;line-height:1.7;margin:0;">
-        The system runs fully automated Monday&ndash;Friday: live IBKR data at 8:45 AM, two-stage AI screening by 9:30 AM, briefing in your inbox at 5:00 PM. No manual intervention, no editorial bias &mdash; just rules-based analysis, every trading day.
-      </p>
-    </div>
-  </section>
-
 
 <!-- FAQ -->
 <section style="padding:72px 0;background:#0a0a0a;">
